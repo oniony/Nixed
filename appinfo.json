@@ -1,0 +1,80 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "paul.ruane@oniony.com",
+    "longName": "Nixed",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/0s_bw.png",
+                "name": "IMAGE_DIGIT0",
+                "type": "png"
+            },
+            {
+                "file": "images/-s_bw.png",
+                "name": "IMAGE_DIGIT_BLANK",
+                "type": "png"
+            },
+            {
+                "file": "images/9s_bw.png",
+                "name": "IMAGE_DIGIT9",
+                "type": "png"
+            },
+            {
+                "file": "images/8s_bw.png",
+                "name": "IMAGE_DIGIT8",
+                "type": "png"
+            },
+            {
+                "file": "images/7s_bw.png",
+                "name": "IMAGE_DIGIT7",
+                "type": "png"
+            },
+            {
+                "file": "images/6s_bw.png",
+                "name": "IMAGE_DIGIT6",
+                "type": "png"
+            },
+            {
+                "file": "images/5s_bw.png",
+                "name": "IMAGE_DIGIT5",
+                "type": "png"
+            },
+            {
+                "file": "images/3s_bw.png",
+                "name": "IMAGE_DIGIT3",
+                "type": "png"
+            },
+            {
+                "file": "images/2s_bw.png",
+                "name": "IMAGE_DIGIT2",
+                "type": "png"
+            },
+            {
+                "file": "images/1s_bw.png",
+                "name": "IMAGE_DIGIT1",
+                "type": "png"
+            },
+            {
+                "file": "images/4s_bw.png",
+                "name": "IMAGE_DIGIT4",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Nixed",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "31979dbb-1fa6-443c-b9ef-6baa996072c2",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
