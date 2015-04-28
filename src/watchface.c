@@ -42,6 +42,7 @@ static void create_window()
 static void main_window_load(Window *window)
 {
     create_digits();
+    show_time();
 }
 
 static void main_window_unload(Window *window)
@@ -78,7 +79,7 @@ static void create_digits()
     }
 }
 
-static void render_time()
+static void show_time()
 {
     time_t now = time(NULL);
     struct tm* t = localtime(&now);
@@ -96,6 +97,19 @@ static void render_time()
     show_digit(3, digit_to_id(t->tm_min % 10, false));
 }
 
+static void show_date()
+{
+    time_t now = time(NULL);
+    struct tm* t = localtime(&now);
+    
+    int date = t->tm_mday;
+
+    show_digit(0, RESOURCE_ID_IMAGE_DIGIT_BLANK);
+    show_digit(1, RESOURCE_ID_IMAGE_DIGIT_BLANK);
+    show_digit(2, digit_to_id(date / 10, true));
+    show_digit(3, digit_to_id(date % 10, false));
+}
+
 static void show_digit(int index, int resource_id)
 {
     if (digits[index] == resource_id) return;
@@ -107,19 +121,6 @@ static void show_digit(int index, int resource_id)
     digit_bitmaps[index] = bitmap;
     digits[index] = resource_id;
     bitmap_layer_set_bitmap(digit_layers[index], bitmap);
-}
-
-static void render_date()
-{
-    time_t now = time(NULL);
-    struct tm* t = localtime(&now);
-    
-    int date = t->tm_mday;
-
-    show_digit(0, RESOURCE_ID_IMAGE_DIGIT_BLANK);
-    show_digit(1, RESOURCE_ID_IMAGE_DIGIT_BLANK);
-    show_digit(2, digit_to_id(date / 10, true));
-    show_digit(3, digit_to_id(date % 10, false));
 }
 
 static int digit_to_id(int digit, bool use_blank_for_zero)
@@ -145,8 +146,8 @@ static int digit_to_id(int digit, bool use_blank_for_zero)
 
 static void handle_minute_tick(struct tm* tick_time, TimeUnits units_changed) 
 {
-    if (mode == MODE_TIME) render_time();
-    if (mode == MODE_DATE) render_date();
+    if (mode == MODE_TIME) show_time();
+    if (mode == MODE_DATE) show_date();
 }
 
 static void handle_tap(AccelAxisType axis, int32_t direction)
@@ -157,7 +158,7 @@ static void handle_tap(AccelAxisType axis, int32_t direction)
     {
         mode = MODE_DATE;
         
-        render_date();
+        show_date();
         
         reset_timer = app_timer_register(3000, handle_mode_reset, NULL);
     }
@@ -167,5 +168,5 @@ static void handle_mode_reset(void* data)
 {
     mode = MODE_TIME;
     
-    render_time();
+    show_time();
 }

@@ -31,8 +31,8 @@ static void main_window_unload(Window *window);
 // rendering
 
 static void create_digits();
-static void render_time();
-static void render_date();
+static void show_time();
+static void show_date();
 static int digit_to_id(int digit, bool use_blank_for_zero);
 static void show_digit(int index, int resource_id);
 
