@@ -29,7 +29,12 @@ static void cleanup()
 static void create_window()
 {
     window = window_create();
+    
+    #ifdef PBL_COLOR
+    window_set_background_color(window, GColorBulgarianRose);
+    #else
     window_set_background_color(window, GColorBlack);
+    #endif
     
     window_set_window_handlers(window, (WindowHandlers) {
         .load = main_window_load,

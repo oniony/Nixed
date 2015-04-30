@@ -9,57 +9,57 @@
     "resources": {
         "media": [
             {
-                "file": "images/4s_bw.png",
-                "name": "IMAGE_DIGIT4",
-                "type": "png"
-            },
-            {
-                "file": "images/1s_bw.png",
-                "name": "IMAGE_DIGIT1",
-                "type": "png"
-            },
-            {
-                "file": "images/2s_bw.png",
-                "name": "IMAGE_DIGIT2",
-                "type": "png"
-            },
-            {
-                "file": "images/3s_bw.png",
-                "name": "IMAGE_DIGIT3",
-                "type": "png"
-            },
-            {
-                "file": "images/5s_bw.png",
-                "name": "IMAGE_DIGIT5",
-                "type": "png"
-            },
-            {
-                "file": "images/6s_bw.png",
-                "name": "IMAGE_DIGIT6",
-                "type": "png"
-            },
-            {
-                "file": "images/7s_bw.png",
-                "name": "IMAGE_DIGIT7",
-                "type": "png"
-            },
-            {
-                "file": "images/8s_bw.png",
-                "name": "IMAGE_DIGIT8",
-                "type": "png"
-            },
-            {
-                "file": "images/9s_bw.png",
-                "name": "IMAGE_DIGIT9",
-                "type": "png"
-            },
-            {
-                "file": "images/-s_bw.png",
+                "file": "images/blank.png",
                 "name": "IMAGE_DIGIT_BLANK",
                 "type": "png"
             },
             {
-                "file": "images/0s_bw.png",
+                "file": "images/9.png",
+                "name": "IMAGE_DIGIT9",
+                "type": "png"
+            },
+            {
+                "file": "images/8.png",
+                "name": "IMAGE_DIGIT8",
+                "type": "png"
+            },
+            {
+                "file": "images/7.png",
+                "name": "IMAGE_DIGIT7",
+                "type": "png"
+            },
+            {
+                "file": "images/6.png",
+                "name": "IMAGE_DIGIT6",
+                "type": "png"
+            },
+            {
+                "file": "images/5.png",
+                "name": "IMAGE_DIGIT5",
+                "type": "png"
+            },
+            {
+                "file": "images/4.png",
+                "name": "IMAGE_DIGIT4",
+                "type": "png"
+            },
+            {
+                "file": "images/3.png",
+                "name": "IMAGE_DIGIT3",
+                "type": "png"
+            },
+            {
+                "file": "images/2.png",
+                "name": "IMAGE_DIGIT2",
+                "type": "png"
+            },
+            {
+                "file": "images/1.png",
+                "name": "IMAGE_DIGIT1",
+                "type": "png"
+            },
+            {
+                "file": "images/0.png",
                 "name": "IMAGE_DIGIT0",
                 "type": "png"
             }
