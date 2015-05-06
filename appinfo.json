@@ -9,13 +9,18 @@
     "resources": {
         "media": [
             {
-                "file": "images/mesh_dark.png",
-                "name": "IMAGE_MESH2",
+                "file": "images/mesh.png",
+                "name": "IMAGE_MESH",
                 "type": "png"
             },
             {
-                "file": "images/mesh.png",
-                "name": "IMAGE_MESH",
+                "file": "images/5.png",
+                "name": "IMAGE_DIGIT5",
+                "type": "png"
+            },
+            {
+                "file": "images/1.png",
+                "name": "IMAGE_DIGIT1",
                 "type": "png"
             },
             {
@@ -39,11 +44,6 @@
                 "type": "png"
             },
             {
-                "file": "images/5.png",
-                "name": "IMAGE_DIGIT5",
-                "type": "png"
-            },
-            {
                 "file": "images/4.png",
                 "name": "IMAGE_DIGIT4",
                 "type": "png"
@@ -56,11 +56,6 @@
             {
                 "file": "images/2.png",
                 "name": "IMAGE_DIGIT2",
-                "type": "png"
-            },
-            {
-                "file": "images/1.png",
-                "name": "IMAGE_DIGIT1",
                 "type": "png"
             },
             {

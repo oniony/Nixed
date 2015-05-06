@@ -30,11 +30,11 @@ static void create_window()
 {
     window = window_create();
     
-    #ifdef PBL_COLOR
+#ifdef PBL_COLOR
     window_set_background_color(window, GColorBulgarianRose);
-    #else
+#else
     window_set_background_color(window, GColorBlack);
-    #endif
+#endif
     
     window_set_window_handlers(window, (WindowHandlers) {
         .load = main_window_load,
@@ -59,8 +59,10 @@ static void main_window_unload(Window *window)
         gbitmap_destroy(digit_bitmaps[i]);
     }
     
+#ifdef PBL_PLATFORM_BASALT
     bitmap_layer_destroy(mesh_layer);
     gbitmap_destroy(mesh_bitmap);
+#endif
 }
 
 // time
@@ -90,14 +92,16 @@ static void create_digits()
 
 static void create_mesh()
 {
+#ifdef PBL_PLATFORM_BASALT
     Layer* window_layer = window_get_root_layer(window);
     GRect window_bounds = layer_get_bounds(window_layer);
     
-    mesh_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MESH2);
+    mesh_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MESH);
     mesh_layer = bitmap_layer_create(window_bounds);
     bitmap_layer_set_compositing_mode(mesh_layer, GCompOpSet);
     bitmap_layer_set_bitmap(mesh_layer, mesh_bitmap);
     layer_add_child(window_layer, bitmap_layer_get_layer(mesh_layer));
+#endif
 }
 
 static void show_time()
