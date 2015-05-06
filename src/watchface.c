@@ -47,6 +47,7 @@ static void create_window()
 static void main_window_load(Window *window)
 {
     create_digits();
+    create_mesh();
     show_time();
 }
 
@@ -57,13 +58,16 @@ static void main_window_unload(Window *window)
         bitmap_layer_destroy(digit_layers[i]);
         gbitmap_destroy(digit_bitmaps[i]);
     }
+    
+    bitmap_layer_destroy(mesh_layer);
+    gbitmap_destroy(mesh_bitmap);
 }
 
 // time
 
 static void create_digits()
 {
-    Layer *window_layer = window_get_root_layer(window);
+    Layer* window_layer = window_get_root_layer(window);
     GRect window_bounds = layer_get_bounds(window_layer);
 
     for (int i = 0; i < 4; i++)
@@ -82,6 +86,17 @@ static void create_digits()
         bitmap_layer_set_bitmap(digit_layers[i], digit_bitmaps[i]);
         layer_add_child(window_layer, bitmap_layer_get_layer(digit_layers[i]));
     }
+}
+
+static void create_mesh()
+{
+    Layer* window_layer = window_get_root_layer(window);
+    GRect window_bounds = layer_get_bounds(window_layer);
+    
+    mesh_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MESH);
+    Layer* mesh_layer = bitmap_layer_create(window_bounds);
+    bitmap_layer_set_bitmap(mesh_layer, mesh_bitmap);
+    layer_add_child(window_layer, bitmap_layer_get_layer(mesh_layer));
 }
 
 static void show_time()

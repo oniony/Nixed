@@ -15,6 +15,8 @@ static BitmapLayer* digit_layers[4];
 static GBitmap* digit_bitmaps[4];
 static int mode = 0;
 static AppTimer* reset_timer;
+static BitmapLayer* mesh_layer;
+static GBitmap* mesh_bitmap;
 
 // program
     
@@ -31,6 +33,7 @@ static void main_window_unload(Window *window);
 // rendering
 
 static void create_digits();
+static void create_mesh();
 static void show_time();
 static void show_date();
 static int digit_to_id(int digit, bool use_blank_for_zero);
