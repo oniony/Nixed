@@ -93,8 +93,9 @@ static void create_mesh()
     Layer* window_layer = window_get_root_layer(window);
     GRect window_bounds = layer_get_bounds(window_layer);
     
-    mesh_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MESH);
-    Layer* mesh_layer = bitmap_layer_create(window_bounds);
+    mesh_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MESH2);
+    mesh_layer = bitmap_layer_create(window_bounds);
+    bitmap_layer_set_compositing_mode(mesh_layer, GCompOpSet);
     bitmap_layer_set_bitmap(mesh_layer, mesh_bitmap);
     layer_add_child(window_layer, bitmap_layer_get_layer(mesh_layer));
 }

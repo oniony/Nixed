@@ -9,9 +9,14 @@
     "resources": {
         "media": [
             {
+                "file": "images/mesh_dark.png",
+                "name": "IMAGE_MESH2",
+                "type": "png"
+            },
+            {
                 "file": "images/mesh.png",
                 "name": "IMAGE_MESH",
-                "type": "png-trans"
+                "type": "png"
             },
             {
                 "file": "images/9.png",
