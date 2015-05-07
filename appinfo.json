@@ -9,21 +9,6 @@
     "resources": {
         "media": [
             {
-                "file": "images/mesh.png",
-                "name": "IMAGE_MESH",
-                "type": "png"
-            },
-            {
-                "file": "images/5.png",
-                "name": "IMAGE_DIGIT5",
-                "type": "png"
-            },
-            {
-                "file": "images/1.png",
-                "name": "IMAGE_DIGIT1",
-                "type": "png"
-            },
-            {
                 "file": "images/9.png",
                 "name": "IMAGE_DIGIT9",
                 "type": "png"
@@ -44,6 +29,11 @@
                 "type": "png"
             },
             {
+                "file": "images/5.png",
+                "name": "IMAGE_DIGIT5",
+                "type": "png"
+            },
+            {
                 "file": "images/4.png",
                 "name": "IMAGE_DIGIT4",
                 "type": "png"
@@ -59,6 +49,11 @@
                 "type": "png"
             },
             {
+                "file": "images/1.png",
+                "name": "IMAGE_DIGIT1",
+                "type": "png"
+            },
+            {
                 "file": "images/0.png",
                 "name": "IMAGE_DIGIT0",
                 "type": "png"
@@ -66,6 +61,11 @@
             {
                 "file": "images/blank.png",
                 "name": "IMAGE_DIGIT_BLANK",
+                "type": "png"
+            },
+            {
+                "file": "images/mesh.png",
+                "name": "IMAGE_MESH",
                 "type": "png"
             }
         ]
