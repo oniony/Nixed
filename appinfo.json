@@ -9,6 +9,11 @@
     "resources": {
         "media": [
             {
+                "file": "images/mesh.png",
+                "name": "IMAGE_MESH",
+                "type": "png"
+            },
+            {
                 "file": "images/9.png",
                 "name": "IMAGE_DIGIT9",
                 "type": "png"
@@ -61,11 +66,6 @@
             {
                 "file": "images/blank.png",
                 "name": "IMAGE_DIGIT_BLANK",
-                "type": "png"
-            },
-            {
-                "file": "images/mesh.png",
-                "name": "IMAGE_MESH",
                 "type": "png"
             }
         ]
