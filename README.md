@@ -3,9 +3,9 @@ Nixed
 
 Nixie tube inspired watchface for the Pebble Time smartwatch.
 
-![Time emulator wiht 'light' off](http://i.imgur.com/a3H4CiS.png)
-![Time emulator with 'light' on](http://i.imgur.com/tbAr91G.png)
-![OG emulator with 'light' off](http://i.imgur.com/1LNsrZG.png)
+![Time emulator wiht 'light' off](http://i.imgur.com/TCZ8tAv.png)
+![Time emulator with 'light' on](http://i.imgur.com/9sVMfyE.png)
+![OG emulator with 'light' off](http://i.imgur.com/W5eIurX.png)
 
 [Pebble App Store listing](https://apps.getpebble.com/applications/554a5efc93cc44482d0000ac)
 
