@@ -9,6 +9,17 @@
     "resources": {
         "media": [
             {
+                "file": "images/blank.png",
+                "name": "IMAGE_DIGIT_BLANK",
+                "type": "png"
+            },
+            {
+                "file": "images/icon.png",
+                "menuIcon": true,
+                "name": "IMAGE_ICON",
+                "type": "png"
+            },
+            {
                 "file": "images/mesh.png",
                 "name": "IMAGE_MESH",
                 "type": "png"
@@ -62,11 +73,6 @@
                 "file": "images/0.png",
                 "name": "IMAGE_DIGIT0",
                 "type": "png"
-            },
-            {
-                "file": "images/blank.png",
-                "name": "IMAGE_DIGIT_BLANK",
-                "type": "png"
             }
         ]
     },
@@ -78,7 +84,7 @@
     ],
     "uuid": "31979dbb-1fa6-443c-b9ef-6baa996072c2",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "1.1",
     "watchapp": {
         "watchface": true
     }
